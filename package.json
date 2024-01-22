@@ -41,7 +41,7 @@
     "next": "^12.0.4",
     "ora": "^6.1.2",
     "react": "^18.0.0",
-    "react-code-blocks": "0.0.8",
+    "react-code-blocks": "0.1.6",
     "react-dom": "^18.0.0",
     "react-icons": "^5.0.1",
     "react-loader-spinner": "^6.1.6",
