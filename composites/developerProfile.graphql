@@ -1,0 +1,29 @@
+enum Proficiency {
+  Beginner
+  Intermediate
+  Advanced
+  Expert
+}
+
+type Language {
+  JavaScript: Proficiency
+  Python: Proficiency
+  Rust: Proficiency
+  Java: Proficiency
+  Swift: Proficiency
+  Go: Proficiency
+  Cpp: Proficiency
+  Scala: Proficiency
+  WebAssembly: Proficiency
+  Solidity: Proficiency
+  Other: Proficiency
+}
+
+type DeveloperProfile
+  @createModel(accountRelation: SINGLE, description: "A developer profile") {
+  developer: DID! @documentAccount
+  name: String! @string(maxLength: 100) 
+  languages: Language!
+  description: String! @string(maxLength: 100000)
+  projects: [String] @string(maxLength: 100) @list(maxLength: 10000)
+}
