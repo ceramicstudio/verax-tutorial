@@ -57,9 +57,17 @@ Navigate to line 156 of the [profile](/src/components/profile.tsx) component and
 
 You are finally ready to start creating attestations!
 
+### Clone the Ceramic Example App Repository
+
+To get started with Ceramic in a local environment, first clone the following example app repository:
+
+```bash
+git clone https://github.com/ceramicstudio/verax-tutorial && cd verax-tutorial
+```
+
 ### Installing and Generating Ceramic Node Credentials
 
-First, install your dependencies:
+Install your dependencies:
 
 ```bash
 npm install
