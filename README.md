@@ -65,7 +65,7 @@ You are finally ready to start creating attestations!
 
 ### Installing and Generating Ceramic Node Credentials
 
-Install your dependencies:
+Install your dependencies in your local cloned repository:
 
 ```bash
 npm install
