@@ -22,7 +22,13 @@ For a more thorough dive on Ceramic's qualities, read [Data Provenance in Compos
 
 This tutorial uses a simple example of a Developer Profile. Therefore, we will swap out several sections of [this Verax tutorial](https://docs.ver.ax/verax-documentation/developer-guides/tutorials/from-a-schema-to-an-attestation) to meet our custom use case. 
 
-Follow the instructions in the tutorial linked above (using Linea Testnet) until you reach the section labeled "3. Create a Schema" (you can do so in a separate repository, or by creating a dummy file in this repository to follow the steps). 
+This tutorial will also utilize an example demo application meant to run locally. We recommend cloning the repository to your device and following along in your text editor of choice:
+
+```bash
+git clone https://github.com/ceramicstudio/verax-tutorial && cd verax-tutorial
+```
+
+Follow the instructions in the Verax tutorial linked above (using Linea Testnet) until you reach the section labeled "3. Create a Schema" (you can do so in a separate repository, or by creating a dummy file in this repository to follow the steps). 
 
 The Verax schema we will be using for this tutorial will be intended to point to a Ceramic Stream ID. Therefore, to keep things simple, we will define our Verax schema as follows:
 
@@ -53,17 +59,9 @@ const txHash = await veraxSdk.portal.deployDefaultPortal(
 );
 ```
 
-Navigate to line 156 of the [profile](/src/components/profile.tsx) component and replace the string you see with the transaction hash you obtained from creating your portal. This will ensure that your portal ID is pulled each time you create an attestation.
+Navigate to line 156 of the [profile](/src/components/profile.tsx) component in your local repository and replace the string you see with the transaction hash you obtained from creating your portal. This will ensure that your portal ID is pulled each time you create an attestation.
 
 You are finally ready to start creating attestations!
-
-### Clone the Ceramic Example App Repository
-
-To get started with Ceramic in a local environment, first clone the following example app repository:
-
-```bash
-git clone https://github.com/ceramicstudio/verax-tutorial && cd verax-tutorial
-```
 
 ### Installing and Generating Ceramic Node Credentials
 
